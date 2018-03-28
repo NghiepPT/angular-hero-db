@@ -16,6 +16,7 @@ $ npm install @angular/cli -g
 Once installed, hop into the folder where you prefer to store your projects and run the following command:
 
 $ ng new angular-hero-db
+
 $ cd angular-hero-db
 
 ## Step 3: Setting up Express.js
