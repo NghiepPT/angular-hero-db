@@ -10,8 +10,11 @@ $ node -v
 ## Step 2:Installing Angular
 
 We're going to use the Angular CLI to create our Angular app. Let's install it at the command line through NPM
+
 $ npm install @angular/cli -g
+
 Once installed, hop into the folder where you prefer to store your projects and run the following command:
+
 $ ng new angular-hero-db
 $ cd angular-hero-db
 
