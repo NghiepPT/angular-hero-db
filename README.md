@@ -33,16 +33,16 @@ For instance, on Windows, you have to start MongoDB at the command prompt:
 
 Then, you have to open another command prompt and connect to it through the shell by running:
 
-"C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"
+"C:\Program Files\MongoDB\Server\3.6\bin\mongo.exe"
 
 Once you're in the shell, run the following commands to create a database:
 
-> use TourOfHerroes
-> db.users.insert({"11":"Mr. Nice"})
+$ use TourOfHerroes
+$ db.users.insert({"11":"Mr. Nice"})
 
 Here, we're creating the database and inserting at least 1 document into it.
 But In my project I created a file db-management.js  to build database. You only go to command prompt and run the following commands to create a database:
-> node db-management.js
+$ node db-management.js
  
 # Development server
 Run node server for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
