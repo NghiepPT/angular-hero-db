@@ -4,20 +4,20 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 
 // Connect
-// const connection = (closure) => {
-//     return MongoClient.connect('mongodb://localhost:27017/TourOfHeroes', (err, db) => {
-//         if (err) return console.log(err);
-
-//         closure(db);
-//     });
-// };
 const connection = (closure) => {
-    return MongoClient.connect('mongodb://PhamNghiep:thaiduonghe1234@ds014118.mlab.com:14118/mdb', (err, db) => {
+    return MongoClient.connect('mongodb://localhost:27017/TourOfHeroes', (err, db) => {
         if (err) return console.log(err);
 
         closure(db);
     });
 };
+// const connection = (closure) => {
+//     return MongoClient.connect('mongodb://PhamNghiep:thaiduonghe1234@ds014118.mlab.com:14118/mdb', (err, db) => {
+//         if (err) return console.log(err);
+
+//         closure(db);
+//     });
+// };
 
 // Error handling
 const sendError = (err, res) => {
