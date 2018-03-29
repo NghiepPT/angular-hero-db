@@ -26,7 +26,24 @@ $ npm install express body-parser --save
 ## Step 4:Setting up MongoDB
 
 You need to visit the MongoDB Downloads page and choose the appropriate installation package based on your OS. Once you have it installed, you need to visit the MongoDB Installation documentation which will show you the necessary steps for getting MongoDB up and running on your machine.
+# Create database
+For instance, on Windows, you have to start MongoDB at the command prompt:
 
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe"
+
+Then, you have to open another command prompt and connect to it through the shell by running:
+
+"C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"
+
+Once you're in the shell, run the following commands to create a database:
+
+> use TourOfHerroes
+> db.users.insert({"11":"Mr. Nice"})
+
+Here, we're creating the database and inserting at least 1 document into it.
+But In my project I created a file db-management.js  to build database. You only go to command prompt and run the following commands to create a database:
+> node db-management.js
+ 
 # Development server
 Run node server for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
