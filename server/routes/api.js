@@ -11,14 +11,6 @@ const connection = (closure) => {
         closure(db);
     });
 };
-// const connection = (closure) => {
-//     return MongoClient.connect('mongodb://PhamNghiep:thaiduonghe1234@ds014118.mlab.com:14118/mdb', (err, db) => {
-//         if (err) return console.log(err);
-
-//         closure(db);
-//     });
-// };
-
 // Error handling
 const sendError = (err, res) => {
     response.status = 501;
