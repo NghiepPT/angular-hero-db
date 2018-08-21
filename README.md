@@ -1,6 +1,6 @@
 # angular-hero-db
 This is a mean stack sample app which base on MogoDB, Express.JS, Angular4, Node Js.
-
+http://sandan.live/index.php/2018/08/21/mean-stack-sample/
 # Installing
 
 ## Step 1: Installing Nodejs
